@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Basic Tests Smoke Suite" parallel="true">
+  <listeners>
+    <listener class-name="mx.abrahamNtd.poc.reports.TestListener" />
+  </listeners>
+  <test name="Tests Cases Smoke">
+    <groups>
+      <run>
+        <include name="smokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="mx.abrahamNtd.poc.rest.TestBasic"></class>
+    </classes>
+  </test>
+</suite>
